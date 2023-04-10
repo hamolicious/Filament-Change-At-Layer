@@ -14,6 +14,6 @@ This will give you a file that will be named `my_sliced_model-filament-change-at
 
 ## Caveats and Things to think about
 1. This is **not** a multi-coloured printing solution per se, instead, you can only change filament at a given layer meaning that you cannot print multi colour models (unless the multiple colours are all set out between separate layers)
-2. Your printer *may* disable steppers if it has been sat around for a while, this can mean that you are able to accidentally knock the Z carnage out of alignment and your entire print is unsalvageable.
+2. Your printer *may* disable steppers if it has been sat around for a while, this can mean that you are able to accidentally knock the Z carnage out of alignment and your entire print is unsalvageable if you are not or cannot use the "home after filament change" function.
 
 
