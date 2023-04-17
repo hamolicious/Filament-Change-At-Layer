@@ -1,6 +1,11 @@
 # Filament Change At Layer
 A simple python script that will allow you to insert some GCODE for manual colour changing, useful for prints with text at the top layer that you may want printed in a different colour.
 
+## Example Uses
+Here are 2 example prints, one useful and the other is for measuring screws.
+
+![results](https://i.ibb.co/3Y5qzGR/IMG20230417162638.jpg)
+
 ## Usage
 I am 90% sure this will only work for Cura slicer and so once you have sliced your model, figure out what layer you want to change filament at (this can be done using the layer slider in preview mode).
 
