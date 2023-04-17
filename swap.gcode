@@ -2,6 +2,9 @@
 ; =============== ;
 ;  FILAMENT SWAP  ;
 ; =============== ;
+
+{notif_tune}      ; Play a notification tune to alert you about the change
+
 G91               ; Relative positioning
 
 G1 Z5             ; Move head up

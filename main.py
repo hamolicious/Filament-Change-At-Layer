@@ -62,6 +62,13 @@ while True:
 
 		break
 
+path = os.path.join(this_dir, 'notif_bleep.gcode')
+if os.path.exists(path):
+	with open(path, 'r') as f:
+		notif_tune = f.read()
+else:
+	notif_tune = ''
+
 home_code = 'G28              ; Home printer' if home else ''
 inserted_gcode = inserted_gcode.format(
 	dump_fil_f=settings.DUMP_FILAMENT_F,
@@ -70,6 +77,7 @@ inserted_gcode = inserted_gcode.format(
 	dump_len=settings.DUMP_LENGTH,
 	home=home_code,
 	old_e_steps=e_steps,
+	notif_tune=notif_tune,
 )
 
 file_data = file_data[:index:] + inserted_gcode + file_data[index::]
